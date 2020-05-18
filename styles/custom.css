@@ -1,0 +1,74 @@
+.banner_part {
+    background-image: url(../images/additional/undraw_book_reading_kx9s.png);
+    width: 100%;
+    height: 500px;
+    resize: both;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+
+.banner_part_shop {
+    background-image: url(../images/additional/undraw_reading_book_4wjf.png);
+    width: 100%;
+    height: 500px;
+    resize: both;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.banner_part_about {
+    background-image: url(../images/additional/undraw_book_lover_mkck.png);
+    width: 100%;
+    height: 500px;
+    resize: both;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+.card-body img {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #593196 !important;
+    text-align: center;
+}
+
+.section-title h2{
+    font-size: 2.5rem!important;
+}
+
+footer {
+    background-color: #f2f6fa!important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#main {
+    padding-bottom: 2.5rem;
+}
+
+.list-group-item {
+    color: black!important;
+    background-color: #ffff!important;
+    border-bottom: 1px solid  #593196;
+}
+
+.list-group-item:hover {
+    color: #593196!important;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.blockquote footer{
+    display: block;
+    font-size: 80%;
+    color: #868e96;
+    background-color: #ffff!important;
+    padding-bottom: 0rem!important;
+    padding-top: 0rem!important;
+}
