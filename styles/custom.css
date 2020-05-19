@@ -72,3 +72,32 @@ footer {
     padding-bottom: 0rem!important;
     padding-top: 0rem!important;
 }
+
+#img-shop-item {
+    height: 30rem;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.basket-badge {
+    font-size: 1.2rem;
+    width: 35px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+}
+
+.basket-text {
+    font-size: 1.3125rem;
+}
+
+.basket-quantity{
+    font-size: 2rem;
+}
+
+.author-books {
+    height: 150px!important;
+}

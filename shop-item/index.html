@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/pulse.css">
+    <link rel="stylesheet" href="../styles/custom.css">
+    <title>MOJOMI - Book store</title>
+    <script src="../scripts/app.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">MOJOMI - Book store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" 
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto"></ul>
+          <ul class="navbar-nav navbar-center mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../shop/index.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about/index.html">About</a>
+              </li>
+
+          </ul>
+        </div>
+    </nav>
+    <div class="container mt-5 mb-5" id="main"> 
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mt-5 ">
+                <img src="../images/books/the_bugalow.jpg" class="img-fluid img-thumbnail" alt="the bungalow" id="img-shop-item" >
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="mt-5 ml-3">
+                    <h2 class="text-primary text-uppercase">The Bungalow</h2> 
+                    <h5 class="text-muted">Sarah Jio</h5>
+                    <div class="float-left">
+                        <p>
+                            <strong>Publisher: </strong>Sakam knigi <br/>
+                            <strong>Total pages: </strong>320<br/>
+                            <strong>Cover type: </strong>Soft cover
+                        </p>                        
+                    </div>
+                    <div class="float-right">
+                        <h5>Price</h5>
+                        <h3>$10</h3>
+                    </div>
+                    <br/>
+                    <div class="clearfix  mt-3">
+                        <div class="float-right">
+                            <span class="ml-4 badge badge-success basket-badge">+</span>
+                            <span class="basket-quantity">1</span>
+                            <span class="badge badge-success basket-badge">-</span>
+                            <button class="btn btn-lg btn-outline-primary ml-2">Add to basket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="mt-5 ml-3 float-right">
+                    <h4>Other books by Sarah Jio</h4>
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <div class="card-body">
+                          <h4 class="card-title">The Violets of March</h4>
+                          <p class="card-text"><img src="../images/books/the_violets_of_march.jpg" alt="The Violets of March" class="img-thumbnail author-books"></p>
+                        </div>
+                    </div>
+                    <div class="card border-primary mb-3" style="max-width: 20rem;">
+                        <div class="card-body">
+                            <h4 class="card-title">All the Flowers in Paris</h4>
+                            <p class="card-text"><img src="../images/books/all_the_flowers_in_paris.jpg" alt="All the Flowers in Paris" class="img-thumbnail author-books"></p>
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="mb-5"></div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-sm-12">
+                <h5 class="text-secondary">Synopsis</h5>
+                <p class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    A sweeping World War II saga of thwarted love, murder, and a long-lost painting. In the summer of 1942, twenty-one-year-old Anne Calloway, newly engaged, sets off to serve in the Army Nurse Corps on the Pacific island of Bora-Bora....
+                </p>
+            </div>
+            <div class="offset-lg-1 col-lg-3 offset-md-1 col-md-3 col-sm-12 col-xs-12">
+                <h5 class="text-secondary">Book quotes</h5>
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <h4 class="card-title">Annie Dillard</h4>
+                      <p class="card-text">She read books as one would breathe air, to fill up and live.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Thank you for choosing MOJOMI book store!</p>
+        <p></p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
