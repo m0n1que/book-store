@@ -1,0 +1,44 @@
+[
+    {
+        "Author": {
+            "fName": "Steve", 
+            "lName": "Berry"
+        },
+        "title": "The Alexandria Link",
+        "publishedDate": "2007", 
+        "picture": "../images/books/alexandria_link.jpg",
+        "totalPages": 462,
+        "publisher": "Ballantine Books",
+        "language":"English",
+        "category": "Mistery",
+        "price": "$10"
+    },
+    {
+        "Author": {
+            "fName": "Steve", 
+            "lName": "Berry"
+        },
+        "title": "The Venetian Betrayal",
+        "publishedDate": "2008", 
+        "picture": "../images/books/venetian_betrayal.jpg",
+        "totalPages": 462,
+        "publisher": "Ballantine Books",
+        "language":"English",
+        "category": "Mistery",
+        "price": "$10"
+    },
+    {
+        "Author": {
+            "fName": "Jordan", 
+            "lName": "Peterson"
+        },
+        "title": "12 Rules for Life",
+        "publishedDate": "2018", 
+        "picture": "../images/books/12_rules_of_life.jpg",
+        "totalPages": 448,
+        "publisher": "Random House Canada",
+        "language":"English",
+        "category": "Self-help book",
+        "price": "$15"
+    }
+]

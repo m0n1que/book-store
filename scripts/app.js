@@ -40,5 +40,3 @@ const chargin = new Book(
     'drama', 
     '$10'
 );
-
-console.log(chargin);
