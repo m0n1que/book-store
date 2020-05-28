@@ -1,3 +1,4 @@
+
 [
     {
         "Author": {
@@ -11,7 +12,8 @@
         "publisher": "Ballantine Books",
         "language":"English",
         "category": "Mistery",
-        "price": "$10"
+        "price": "$10", 
+        "type": "best-selling"
     },
     {
         "Author": {
@@ -25,7 +27,8 @@
         "publisher": "Ballantine Books",
         "language":"English",
         "category": "Mistery",
-        "price": "$10"
+        "price": "$10",
+        "type": "best-selling"
     },
     {
         "Author": {
@@ -39,6 +42,7 @@
         "publisher": "Random House Canada",
         "language":"English",
         "category": "Self-help book",
-        "price": "$15"
+        "price": "$15",
+        "type": "latest-books"
     }
 ]
