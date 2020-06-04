@@ -1,10 +1,10 @@
-
 [
     {
         "Author": {
             "fName": "Steve", 
             "lName": "Berry"
         },
+        "id": "tal_01",
         "title": "The Alexandria Link",
         "publishedDate": "2007", 
         "picture": "../images/books/alexandria_link.jpg",
@@ -20,6 +20,7 @@
             "fName": "Steve", 
             "lName": "Berry"
         },
+        "id": "tvb_01",
         "title": "The Venetian Betrayal",
         "publishedDate": "2008", 
         "picture": "../images/books/venetian_betrayal.jpg",
@@ -35,6 +36,7 @@
             "fName": "Jordan", 
             "lName": "Peterson"
         },
+        "id": "rfl_01",
         "title": "12 Rules for Life",
         "publishedDate": "2018", 
         "picture": "../images/books/12_rules_of_life.jpg",
@@ -44,5 +46,117 @@
         "category": "Self-help book",
         "price": "$15",
         "type": "latest-books"
+    }, 
+    {
+        "Author": {
+            "fName": "George S.", 
+            "lName": "Clason"
+        },
+        "id": "rmb_01",
+        "title": "The Richest Man in Babylon",
+        "publishedDate": "1926", 
+        "picture": "../images/books/riches_man_in_babylon.jpg",
+        "totalPages": 144,
+        "publisher": "Penguin Books",
+        "language":"English",
+        "category": "Self-help book",
+        "price": "$20",
+        "type": "best-selling"
+    },
+    {
+        "Author": {
+            "fName": "Napoleon", 
+            "lName": "Hill"
+        },
+        "id": "tgr_01",
+        "title": "Think and Grow Rich",
+        "publishedDate": "1997", 
+        "picture": "../images/books/think_and_grow_rich.jpg",
+        "totalPages": 238,
+        "publisher": "The Ralston Society",
+        "language":"English",
+        "category": "Self-help book",
+        "price": "$20",
+        "type": "best-selling"
+    },
+    {
+        "Author": {
+            "fName": "Sarah", 
+            "lName": "Jio"
+        },
+        "id": "vm_01",
+        "title": "The Violets of March",
+        "publishedDate": "2011", 
+        "picture": "../images/books/the_violets_of_march.jpg",
+        "totalPages": 296,
+        "publisher": "Plume Books",
+        "language":"English",
+        "category": "Women's Fiction",
+        "price": "$7.40",
+        "type": "already-selling"   
+    },
+    {
+        "Author": {
+            "fName": "Sarah", 
+            "lName": "Jio"
+        },
+        "id": "tb_01",
+        "title": "The Bungalow",
+        "publishedDate": "2011", 
+        "picture": "../images/books/the_bugalow.jpg",
+        "totalPages": 320,
+        "publisher": "Plume Books",
+        "language":"English",
+        "category": "Women's Fiction",
+        "price": "$10",
+        "type": "already-selling"  
+    },
+    {
+        "Author": {
+            "fName": "Sarah", 
+            "lName": "Jio"
+        },
+        "id": "afp_01",
+        "title": "All the Flowers in Paris",
+        "publishedDate": "2019", 
+        "picture": "../images/books/all_the_flowers_in_paris.jpg",
+        "totalPages": 291,
+        "publisher": "Ballantine Books",
+        "language":"English",
+        "category": "Women's Fiction",
+        "price": "$14",
+        "type": "latest-books"  
+    },
+    {
+        "Author": {
+            "fName": "Brian", 
+            "lName": "Tracy"
+        },
+        "id": "etf_01",
+        "title": "Eat That Frog",
+        "publishedDate": "2017", 
+        "picture": "../images/books/eat_that_frog.jpg",
+        "totalPages": 144,
+        "publisher": "Berrett-Koehler Publishers",
+        "language":"English",
+        "category": "Self-help book",
+        "price": "$12",
+        "type": "latest-books"  
+    },
+    {
+        "Author": {
+            "fName": "Donato", 
+            "lName": "Carrisi"
+        },
+        "id": "tgf_01",
+        "title": "The Girl in the Fog",
+        "publishedDate": "2015", 
+        "picture": "../images/books/the_girl_in_the_fog.jpg",
+        "totalPages": 300,
+        "publisher": "Abacus",
+        "language":"English",
+        "category": "Drama",
+        "price": "$20",
+        "type": "latest-books"  
     }
 ]
