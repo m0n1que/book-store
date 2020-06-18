@@ -1,45 +1,46 @@
-class Author {
-    constructor(fName, lName) {
-        this.fName = fName;
-        this.lName = lName;
-    }
-}
+// class Author {
+//     constructor(fName, lName) {
+//         this.fName = fName;
+//         this.lName = lName;
+//     }
+// }
 
-class Book extends Author{
-    title = '';
-    publishedDate = new Date(); 
-    picture = '';
-    totalPages; 
-    publisher; 
-    language; 
-    category;
-    price = 0;
+// class Book extends Author{
+//     title = '';
+//     publishedDate = new Date(); 
+//     picture = '';
+//     totalPages; 
+//     publisher; 
+//     language; 
+//     category;
+//     price = 0;
 
-    constructor(fName, lName, title, publishedDate, picture, totalPages, publisher, language, category, price) {
-        super(fName, lName);
-        this.title = title;
-        this.publishedDate = new Date(); 
-        this.picture = picture;
-        this.totalPages = totalPages; 
-        this.publisher = publisher; 
-        this.language = language;
-        this.category = category;
-        this.price = price;
-    }
-} 
+//     constructor(fName, lName, title, publishedDate, picture, totalPages, publisher, language, category, price) {
+//         super(fName, lName);
+//         this.title = title;
+//         this.publishedDate = new Date(); 
+//         this.picture = picture;
+//         this.totalPages = totalPages; 
+//         this.publisher = publisher; 
+//         this.language = language;
+//         this.category = category;
+//         this.price = price;
+//     }
+// } 
 
 class BookList {
-    books = [];
+    //books = [];
 
     constructor(type) {
         this.type = type;
+        this.books = [];
         if (this.type != 'already-selling'){
             this.loadBooks(type);
         }
     }
 
     loadBooks(type) {
-        fetch('http://localhost:5000/seed_data/data.json')
+        fetch('http://localhost:8080/seed_data/data.json')
             .then(response => response.json())
             .then(data => {
                 this.books = data.filter(book => book.type == type);
@@ -92,6 +93,8 @@ class App {
     static init() {
         const bestSellerBooks = new BookList('best-selling');
         const lastestBooks = new BookList('latest-books');
+        console.log(lastestBooks);
+        console.log(bestSellerBooks);
     }    
 }
 
