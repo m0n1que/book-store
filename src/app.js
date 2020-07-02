@@ -40,7 +40,7 @@ class BookList {
     }
 
     loadBooks(type) {
-        fetch('http://localhost:8080/seed_data/data.json')
+        fetch('https://localhost:8080/seed_data/data.json')
             .then(response => response.json())
             .then(data => {
                 this.books = data.filter(book => book.type == type);
