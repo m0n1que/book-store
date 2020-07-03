@@ -9,21 +9,25 @@ function loginHandler(){
 }
 
 function sendHttpRequest(method, url, data=null){
-    const promise = new Promise((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.open(method, url);
-        xhr.setRequestHeader("Content-Type", "application/json");
-        xhr.responseType = 'json';
-        xhr.onload = function() {
-            if(xhr.status >= 200 && xhr.status < 300){
-                resolve(xhr.response);
-            } else {
-                reject(new Error('Something went wrong!'));
-            }
-        };
-        xhr.send(JSON.stringify(data));
+    return fetch(url, {
+        method: method, 
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => {
+        if(response.status >= 200 && response.status < 300){
+            return response.json();
+        }else{
+            return response.json().then(errData => {
+                console.log(errData);
+                throw new Error('Something went wrong - server error');
+            });
+        }
+    }).then(outData => {
+        localStorage.setItem('bks_token', outData.token);
+        window.location.replace('https://localhost:8080/');
     });
-    return promise;
 }
 
 

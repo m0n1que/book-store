@@ -50,14 +50,6 @@ class BookList {
     }
 
     createBookItem(books, type) {
-        // const bookTypes = document.querySelector(`#main section .row .${type}`);
-        // const cloned = bookTypes.cloneNode(true);
-        // const div_book_to_add = bookTypes.parentNode;
-        // for (const item of books) {
-        //     cloned.childNodes[1].childNodes[1].src = item.picture;
-        //     cloned.childNodes[1].childNodes[1].alt = item.title;
-        //     div_book_to_add.append(cloned);
-        // }
         const typeDiv = document.querySelector(`#${type}`);
         for(const item of books) {
             const wrapDiv = document.createElement('DIV');
@@ -95,7 +87,36 @@ class App {
         const lastestBooks = new BookList('latest-books');
         console.log(lastestBooks);
         console.log(bestSellerBooks);
+        this.getCurrentUser();
     }    
+
+    static getCurrentUser(){
+        const bks_token_ex = localStorage.getItem('bks_token');
+        if(bks_token_ex){
+            fetch('https://localhost:5001/api/Account/userdetails', {
+                method: 'get', 
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${bks_token_ex}`
+                }
+            }).then(response => response.json())
+              .then(data => {
+                  const userLbl = document.getElementById('user_in');
+                  userLbl.textContent = data.displayName;
+                  document.getElementById('login_link').style.display = 'none';
+                  document.getElementById('register_link').style.display = 'none';
+                  document.getElementById('profile').style.display = 'block';
+              });
+        }
+    }
 }
 
 App.init();
+
+
+const logout = document.getElementById('logout_link');
+logout.addEventListener('click', (e)=>{
+    e.preventDefault();
+    localStorage.removeItem('bks_token');
+    window.location.reload();
+})
